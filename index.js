@@ -16,8 +16,8 @@ const connection = await mysql.createConnection({
     database: 'meteo'
 });
 
-app.get('/', (req, res) => {
-    res.json('Test API Meteo');
+app.get('/', async (req, res) => {
+    res.json({ "Bienvenue": "API Meteo" });
 });
 
 // Stations
